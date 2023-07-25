@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_background" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/user"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="3dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome">
+
+        <RadioButton
+            android:id="@+id/rdbtnMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/man" />
+
+        <RadioButton
+            android:id="@+id/rdbtnWoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/woman" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgLiterOrMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rgGender">
+
+        <RadioButton
+            android:id="@+id/rdbtnLtr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Litre" />
+
+        <RadioButton
+            android:id="@+id/rdbtnMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Para" />
+
+        <RadioButton
+            android:id="@+id/rdbtnFull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fulle" />
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/etLiterOrMoney"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Litre yada Para"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/rgLiterOrMoney"
+        app:layout_constraintLeft_toRightOf="@id/rgLiterOrMoney"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rgLiterOrMoney" />
+
+    <Spinner
+        android:id="@+id/spFuelTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:entries="@array/fuel_types"
+        app:layout_constraintTop_toBottomOf="@id/rgLiterOrMoney" />
+
+
+    <Spinner
+        android:id="@+id/spCars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:entries="@array/fuel_types"
+        app:layout_constraintTop_toBottomOf="@id/spFuelTypes" />
+
+
+    <Button
+        android:id="@+id/btnShowResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/show_result"
+        app:layout_constraintBottom_toBottomOf="@id/rgGender"
+        app:layout_constraintLeft_toRightOf="@id/rgGender"
+        app:layout_constraintTop_toTopOf="@id/rgGender" />
+
+
+
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

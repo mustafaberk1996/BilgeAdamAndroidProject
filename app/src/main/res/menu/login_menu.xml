@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/menuSearch"
+        android:icon="@drawable/baseline_search_24"
+        android:title="Search"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/menuFlight"
+        android:icon="@drawable/baseline_airplanemode_active_24"
+        android:title="Flight"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/menuGoogle"
+        android:icon="@drawable/ic_google"
+        android:title="Google"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/menuFacebook"
+        android:icon="@drawable/ic_facebook_white"
+        android:title="Facebook"
+        app:showAsAction="always" />
+
+
+</menu>

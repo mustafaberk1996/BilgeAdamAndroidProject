@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#03A9F4"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:background="@color/black"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_width="wrap_content"
+            android:id="@+id/image2"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnOpen"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:text="Open"
+                        android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Merhaba"
+            android:textSize="30sp"
+            android:layout_toRightOf="@id/btnOpen"
+            android:layout_alignParentBottom="true"
+            android:textColor="#BA1313"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_below="@+id/image2"
+            android:layout_height="100dp"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_above="@+id/btnOpen"
+            android:layout_height="100dp"
+            android:text="save" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

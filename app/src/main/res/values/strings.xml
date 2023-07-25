@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="message">Bu benim ilk toast mesajim....</string>
+    <string name="welcome">Hoşgeldiniz</string>
+    <string name="exit">Cikis</string>
+    <string name="man">Erkek</string>
+    <string name="woman">Kadin</string>
+    <string name="show_result">Sonucu Goster</string>
+
+
+    <string-array name="fuel_types">
+        <item>BENZIN</item>
+        <item>MAZOT</item>
+        <item>GAS</item>
+    </string-array>
+
+
+    <string-array name="gender">
+        <item>Erkek</item>
+        <item>Kadin</item>
+    </string-array>
+</resources>
